@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMBAR ALI - Portfolio</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');</style>
+    <style>
+        body {  
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #faf6dd;
+            color: #333;
+        }
+
+        header {
+            background-color: #690101;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a:not(:first-child) {
+                display: none;
+            }
+
+            nav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            nav.responsive {
+                position: relative;
+            }
+
+            nav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            nav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+        nav a:hover {
+            font-size: 1.02rem;
+            color: #2980b9;
+        }
+
+        section {
+            padding: 2em;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 8em 0;
+        }
+        .skill-category {
+            margin-bottom: 1em;
+        }
+
+        .skill {
+            margin-bottom: 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-bar {
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.2em;
+            text-align: right;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-buttons a:hover {
+            background-color: #2980b9;
+        }
+        section h2 {
+            color: #690101 ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kambar Ali</h1>
+        <span id="element1"></span>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+        </a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Kambar Ali's Portfolio</h2>
+        <p>Hello, I'm Kambar Ali, a dedicated web developer passionate about creating innovative and user-centric
+            digital solutions. With a solid foundation in computer science and a love for problem-solving, I've embarked
+            on a journey to craft compelling web experiences that leave a lasting impression.</p>
+        <p>My expertise extends to a range of technologies, including HTML, CSS, JavaScript, and various web frameworks.
+            Whether it's designing responsive and intuitive interfaces or diving into the intricacies of backend
+            development, I thrive on the challenges that web development presents.</p>
+        <p>Throughout my career, I've had the privilege of working on diverse projects, each contributing to my growth
+            as a developer. I believe in the power of collaboration and am always eager to explore new opportunities to
+            learn and create.</p>
+        <p>Feel free to explore my portfolio and discover some of the projects that showcase my skills and creativity.
+            If you're looking for a dedicated and adaptable developer or if you simply want to connect, I'd love to hear
+            from you. Let's build something extraordinary!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello there! I'm Kambar Ali, a web developer based in Lakhimpur Kheri. I recently completed my graduation in
+            2023, where I honed my skills and laid the foundation for my journey into the world of technology.</p>
+        <p>Currently, I am passionately pursuing a career as a Full Stack Web Developer, delving into the intricacies of
+            both front-end and back-end development. My goal is to not only create visually appealing and responsive
+            websites but also to ensure they are robust and efficient under the hood.</p>
+        <p>Throughout my educational journey, I've had the opportunity to explore various programming languages,
+            frameworks, and tools. This exploration has fueled my curiosity and enthusiasm for staying up-to-date with
+            the latest trends and technologies in the dynamic field of web development.</p>
+        <p>As I continue to expand my skill set, I am excited about the prospect of contributing to innovative projects
+            and collaborating with like-minded individuals. My experiences have instilled in me a dedication to
+            producing high-quality, user-centric solutions that make a positive impact.</p>
+        <p>Feel free to explore my portfolio and get a glimpse of the projects that reflect my commitment to excellence.
+            If you share a passion for web development or if you're looking for a creative and driven collaborator,
+            let's connect and create something extraordinary!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress-bar" style="width: 80%;">90%</div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">HTML5</span>
+                <div class="progress-bar" style="width: 90%;">90%</div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="progress-bar" style="width: 85%;">95%</div>
+            </div>
+            <!-- Add more programming languages as needed -->
+        </div>
+        <div class="skill-category">
+            <h3>Frameworks</h3>
+            <div class="skill">
+                <span class="skill-name">React.js</span>
+                <div class="progress-bar" style="width: 75%;">85%</div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Node.js</span>
+                <div class="progress-bar" style="width: 70%;">80%</div>
+            </div>
+            <!-- Add more frameworks as needed -->
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Explore my resume and learn more about my experiences and skills.</p>
+
+        <a href="Kambar-Ali-.pdf" target="_blank" class="download-button">Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me through various channels:</p>
+    
+            <div class="contact-buttons">
+                <a href="https://wa.me/+919125241370" target="_blank" class="whatsapp-button">WhatsApp</a>
+                <a href="mailto:alikambar9125@gmail.com" target="_blank" class="email-button">Email</a>
+                <a href="https://www.instagram.com/__acount_deactivated_/" target="_blank" class="instagram-button">Instagram</a>
+                <a href="https://www.facebook.com/royalnawabprince/" target="_blank" class="facebook-button">Facebook</a>
+                <a href="https://github.com/Zaidiprince" target="_blank" class="github-button">GitHub</a>
+                <a href="https://www.linkedin.com/in/kambar-ali/" target="_blank" class="linkedin-button">LinkedIn</a>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kambar Ali- Portfolio</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.querySelector("nav");
+            if (x.className === "") {
+                x.className += "responsive";
+            } else {
+                x.className = "";
+            }
+        }
+
+        var typed = new Typed('#element1', {
+                strings: ['Web Developer', 'Graphic Designer'],
+                typeSpeed: 30,
+                
+            });
+    </script>
+</body>
+
+</html>
